@@ -21,6 +21,10 @@ ifneq ($(filter bullhead,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
         vendor/custom/prebuilt/bootanimation/bullhead.zip:system/media/bootanimation.zip
 endif
+ifneq ($(filter clark,$(TARGET_PRODUCT)),)
+    PRODUCT_COPY_FILES += \
+        vendor/custom/prebuilt/bootanimation/angler.zip:system/media/bootanimation.zip
+endif
 ifneq ($(filter shamu,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
         vendor/custom/prebuilt/bootanimation/shamu.zip:system/media/bootanimation.zip
